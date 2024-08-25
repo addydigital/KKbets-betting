@@ -222,6 +222,9 @@ importers:
       typescript:
         specifier: ~4.7.4
         version: 4.7.4
+      webpack:
+        specifier: ^5.94.0
+        version: 5.94.0
 
 packages:
 
