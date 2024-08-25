@@ -16,12 +16,7 @@ export default defineConfig({
     },
   },
 
-  component: {
-    devServer: {
-      framework: "react",
-      bundler: "webpack",
-    },
-  },
+  
 });
 module.exports = {
   projectId: "gaccz1",
