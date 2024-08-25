@@ -1,23 +1,5 @@
-import { defineConfig } from "cypress";
-
-export default defineConfig({
-  e2e: {
-   
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-    // other configuration options
+e2e: {
+  setupNodeEvents(on, config) {
+    // implement node event listeners here
   },
-
-  component: {
-    devServer: {
-      framework: "react",
-      bundler: "webpack",
-    },
-  },
-
-});
-module.exports = {
-  projectId: "gaccz1",
-  // ...rest of the Cypress project config
-};
+}
