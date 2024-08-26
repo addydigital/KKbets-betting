@@ -4,10 +4,7 @@
   "projects": {
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
-    "golf-seer": "apps/GolfSeer",
     "kkbets": "apps/kkbets",
-    "kkbets-betting-golf-seer": "apps/kkbets-betting/GolfSeer",
-    "kkbets-e2e": "apps/kkbets-e2e",
-    "{workspace-root}-golf-seer": "apps/{workspace-root}/GolfSeer"
+    "kkbets-e2e": "apps/kkbets-e2e"
   }
 }
