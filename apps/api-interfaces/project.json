@@ -1,0 +1,17 @@
+{
+  "name": "api-interfaces",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/api-interfaces/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:webpack",
+      "options": {
+        "outputPath": "dist/apps/api-interfaces",
+        "main": "apps/api-interfaces/src/main.ts",
+        "tsConfig": "apps/api-interfaces/tsconfig.app.json",
+        "assets": ["apps/api-interfaces/src/assets"]
+      }
+    }
+  }
+}
