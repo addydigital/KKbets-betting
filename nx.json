@@ -4,7 +4,7 @@
     "build": { "dependsOn": ["^build"], "outputs": ["{projectRoot}/dist"], "cache": true },
     "test": { "outputs": ["{projectRoot}/dist"], "cache": true },
     "lint": { "cache": true },
-    "e2e": { "cache": true }
+    "e2e": { "cache": false }
   },
   "generators": {
     "@nrwl/react": {
