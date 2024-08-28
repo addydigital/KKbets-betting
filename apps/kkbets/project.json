@@ -1,26 +1,24 @@
 {
   "name": "kkbets",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/kkbets/src",
   "projectType": "application",
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@nrwl/web:webpack",
+      "executor": "@nrwl/web:build",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "compiler": "babel",
         "outputPath": "dist/apps/kkbets",
         "index": "apps/kkbets/src/index.html",
-        "baseHref": "/",
         "main": "apps/kkbets/src/main.tsx",
         "polyfills": "apps/kkbets/src/polyfills.ts",
         "tsConfig": "apps/kkbets/tsconfig.app.json",
         "assets": ["apps/kkbets/src/favicon.ico", "apps/kkbets/src/assets"],
         "styles": [],
         "scripts": [],
-        "webpackConfig": "@nrwl/react/plugins/webpack"
+        "webpackConfig": "@nrwl/react/plugins/webpack",
+        "baseHref": "/"
       },
       "configurations": {
         "development": {
@@ -72,7 +70,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/apps/kkbets"],
+      "outputs": ["coverage/apps/kkbets"],
       "options": {
         "jestConfig": "apps/kkbets/jest.config.ts",
         "passWithNoTests": true

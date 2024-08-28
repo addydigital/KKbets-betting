@@ -1,11 +1,12 @@
+
 {
   "name": "kkbets-e2e",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "root": "apps/kkbets-e2e",
   "sourceRoot": "apps/kkbets-e2e/src",
   "projectType": "application",
-  "targets": {
+  "architect": {
     "build": {
-      "executor": "@nrwl/node:webpack",
+      "builder": "@nrwl/web:webpack",
       "options": {
         "outputPath": "dist/apps/kkbets-e2e",
         "main": "apps/kkbets-e2e/src/main.ts",
@@ -13,5 +14,7 @@
         "assets": ["apps/kkbets-e2e/src/assets"]
       }
     }
-  }
+   
+  },
+  "tags": []
 }
