@@ -101,6 +101,9 @@ importers:
       tslib:
         specifier: ^2.7.0
         version: 2.7.0
+      web:build:
+        specifier: link:@nrwl/web:build
+        version: link:@nrwl/web:build
     devDependencies:
       '@nrwl/cypress':
         specifier: 19.6.3

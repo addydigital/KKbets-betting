@@ -3,7 +3,7 @@
   "sourceRoot": "apps/kkbets/src",
   "projectType": "application",
   "tags": [],
-  "architect": {
+  "targets": {
     "build": {
       "executor": "@nrwl/web:build",
       "outputs": ["{options.outputPath}"],
