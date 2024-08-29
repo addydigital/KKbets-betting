@@ -5,11 +5,11 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@nrwl/web:build",
+     "executor": "@nrwl/web:webpack",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/kkbets",
+        
         "index": "apps/kkbets/src/index.html",
         "main": "apps/kkbets/src/main.tsx",
         "polyfills": "apps/kkbets/src/polyfills.ts",

@@ -1,20 +1,54 @@
 {
-
   "targetDefaults": {
-    "build": { "dependsOn": ["^build"], "outputs": ["{projectRoot}/dist"], "cache": true },
-    "test": { "outputs": ["{projectRoot}/dist"], "cache": true },
-    "lint": { "cache": true },
-    "e2e": { "cache": false }
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/dist"],
+      "cache": true
+    },
+    "test": {
+      "outputs": ["{projectRoot}/dist"],
+      "cache": true
+    },
+    "lint": {
+      "cache": true
+    },
+    "e2e": {
+      "cache": false
+    }
   },
   "generators": {
     "@nrwl/react": {
-      "application": { "style": "styled-components", "linter": "eslint", "babel": true },
-      "component": { "style": "styled-components" },
-      "library": { "style": "styled-components", "linter": "eslint" }
+      "application": {
+        "style": "styled-components",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": {
+        "style": "styled-components"
+      },
+      "library": {
+        "style": "styled-components",
+        "linter": "eslint"
+      }
     }
   },
   "defaultProject": "kkbets",
   "defaultBase": "master",
-  "plugins": [{ "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } }],
+  "plugins": [
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "plugin": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    }
+  ],
   "nxCloudAccessToken": "YWEyMzc4ZTUtMjFiZS00NTBmLTlkMmItYWFmOGY3ZTY4YzlkfHJlYWQtd3JpdGU="
 }

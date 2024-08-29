@@ -4,7 +4,7 @@
 
   "sourceRoot": "apps/api/src",
   "projectType": "application",
-  "architect": {
+  "targets": {
     "build": {
       "builder": "@nrwl/web:webpack",
       "outputs": ["{options.outputPath}"],
