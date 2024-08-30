@@ -43,7 +43,7 @@
     "tslib": "^2.7.0"
   },
   "devDependencies": {
-    "@nrwl/cypress": "12.10.1",
+    "@nrwl/cypress": "13.0.0",
     "@nrwl/eslint-plugin-nx": "16.0.0",
     "@nrwl/express": "16.0.0",
     "@nrwl/jest": "16.0.0",
@@ -84,7 +84,7 @@
     "ts-jest": "29.1.5",
     "ts-node": "~10.8.2",
     "typescript": "~5.5.4",
-    "webpack": "^4.47.0",
-    "webpack-cli": "^4.0.0"
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.10.0"
   }
 }
