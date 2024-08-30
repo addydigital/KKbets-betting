@@ -1,14 +1,12 @@
-import * as express from 'express';
+import express from 'express';
 import * as mongoose from 'mongoose';
 import { config as dotenvConfig } from 'dotenv';
 import appRouter from './app/routes';
-import * as cookieParser from 'cookie-parser';
+import cookieParser from 'cookie-parser';
 import socket from './app/util/socket';
 
 dotenvConfig();
 import './app/middleware/passport';
-import { Message } from './app/models/Message';
-import { User } from './app/models/User';
 import * as path from 'path';
 const port = process.env.PORT || 3333;
 const env = process.env.NODE_ENV || 'development';
