@@ -6,7 +6,7 @@
   "projectType": "application",
   "targets": {
     "build": {
-      "builder": "@nrwl/web:webpack",
+      "executor": "@nrwl/webpack:webpack",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/api",
@@ -50,6 +50,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/api"],
       "options": {
+
         "jestConfig": "apps/api/jest.config.ts",
         "passWithNoTests": true
       }

@@ -9,7 +9,7 @@ dotenvConfig();
 import './app/middleware/passport';
 import { Message } from './app/models/Message';
 import { User } from './app/models/User';
-import path = require('path');
+import * as path from 'path';
 const port = process.env.PORT || 3333;
 const env = process.env.NODE_ENV || 'development';
 const connection_uri = process.env.MONGODB_URI || 'mongodb://localhost/KKBets';

@@ -1,19 +1,28 @@
 {
+   "nxCloudAccessToken": "YWEyMzc4ZTUtMjFiZS00NTBmLTlkMmItYWFmOGY3ZTY4YzlkfHJlYWQtd3JpdGU=",
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "npmScope": "kkbets",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
   "targetDefaults": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["{projectRoot}/dist"],
-      "cache": true
-    },
-    "test": {
-      "outputs": ["{projectRoot}/dist"],
-      "cache": true
-    },
-    "lint": {
-      "cache": true
-    },
-    "e2e": {
-      "cache": false
+      "dependsOn": ["^build"]
     }
   },
   "generators": {
@@ -32,23 +41,5 @@
       }
     }
   },
-  "defaultProject": "kkbets",
-  "defaultBase": "master",
-  "plugins": [
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
-    {
-      "plugin": "@nx/webpack/plugin",
-      "options": {
-        "buildTargetName": "build",
-        "serveTargetName": "serve",
-        "previewTargetName": "preview"
-      }
-    }
-  ],
-  "nxCloudAccessToken": "YWEyMzc4ZTUtMjFiZS00NTBmLTlkMmItYWFmOGY3ZTY4YzlkfHJlYWQtd3JpdGU="
+  "defaultProject": "kkbets"
 }
